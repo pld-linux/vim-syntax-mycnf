@@ -19,26 +19,26 @@ syn case ignore
 
 syn match  mycnfLabel		"^.\{-}="
 syn region mycnfHeader		start="^\[" end="\]"
-syn match  mycnfComment	"^#.*$"
+syn match  mycnfComment		"^#.*$"
 
 " Define the default highlighting.
 " For version 5.7 and earlier: only when not done already
 " For version 5.8 and later: only when an item doesn't have highlighting yet
 if version >= 508 || !exists("did_mycnf_syntax_inits")
-  if version < 508
-    let did_mycnf_syntax_inits = 1
-    command -nargs=+ HiLink hi link <args>
-  else
-    command -nargs=+ HiLink hi def link <args>
-  endif
+	if version < 508
+		let did_mycnf_syntax_inits = 1
+		command -nargs=+ HiLink hi link <args>
+	else
+		command -nargs=+ HiLink hi def link <args>
+	endif
 
-    HiLink mycnfHeader	Special
-    HiLink mycnfComment	Comment
-    HiLink mycnfLabel	Type
+	HiLink mycnfHeader	Special
+	HiLink mycnfComment	Comment
+	HiLink mycnfLabel	Type
 
-  delcommand HiLink
+	delcommand HiLink
 endif
 
 let b:current_syntax = "mycnf"
 
-" vim:ts=4:sw=4
+" vim:ts=4:sw=4:noet
