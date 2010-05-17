@@ -17,8 +17,7 @@ endif
 " shut case off
 syn case ignore
 
-syn match  mycnfLabel		"^.\{-}="
-syn match  mycnfLabel		"^.\{-}$"
+syn match  mycnfLabel		"^[a-z_0-9-]\+\s*=\?"
 syn region mycnfHeader		start="^\[" end="\]"
 syn match  mycnfComment		"^#.*$"
 
