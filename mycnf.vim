@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:     MySQL like config files (~/.my.cnf and friends)
-" Version Info: $Id$
+" Version Info: $Revision$
 " Author:       Elan Ruusamäe <glen@delfi.ee>
 " URL:          http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/packages/vim-syntax-mycnf/
 " Last Change:  $Date$
