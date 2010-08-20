@@ -1,7 +1,7 @@
 %define		syntax mycnf
 Summary:	Vim syntax: MySQL-like config files (~/.my.cnf and friends).
 Name:		vim-syntax-%{syntax}
-Version:	1.1
+Version:	1.5
 Release:	1
 License:	GPL v2
 Group:		Applications/Editors/Vim
